@@ -28,7 +28,7 @@ void findRecommendedItems(const int preferences[NUM_USERS][NUM_ITEMS]) {
             // 엄격한 부등호(>)를 쓰면 동점일 때 먼저 나온 항목이 유지된다
             if (preferences[i][j] > maxPref) {
                 maxPref = preferences[i][j];
-                recommended = j;
+                recommended = j;  
             }
         }
 
