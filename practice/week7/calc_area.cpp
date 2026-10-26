@@ -23,3 +23,31 @@ int main() {
 
     return 0;
 }
+
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int count = 0;
+    for(int i =0;i<101;i++)
+    {
+         int a =i/10;
+         int b =i%10;
+        
+         if (a==3 || a==6 || a ==9)
+            count++;
+        if (b==3 ||b==6| b==9)
+             count++;
+        if(count==0){
+            cout<<i<<endl;
+        }
+        else{
+            for (int j =0;j<count;j++){
+               cout<< "짝";
+            }
+        }
+    }
+    return 0;
+ 
+}
