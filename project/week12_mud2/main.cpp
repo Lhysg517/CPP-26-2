@@ -289,7 +289,7 @@ void checkState(const vector<vector<int>>& map, int user_x, int user_y,
         break;
 
     case 1:
-        // 아이템 위치에 도착할 때마다 개수 증가
+        // 아이템 위치에 도달할때마다 아이템 개수 증가
         user.IncreaseItemCnt(1);
 
         // 첫 번째 아이템: 무기
@@ -355,6 +355,8 @@ void checkState(const vector<vector<int>>& map, int user_x, int user_y,
         break;
 
     case 3:
+        //아이템 위치에 도달할때마다 아이템 개수 증가
+        user.IncreaseItemCnt(1);
         cout << "포션이 있습니다." << endl;
 
         user.IncreaseHP(2);
