@@ -3,8 +3,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "user.h"
-
+#include "./user.h"
 using namespace std;
 
 const int mapX = 5;
@@ -42,7 +41,7 @@ int main()
     };
 
     // 자식 클래스 객체 생성
-    Warrior magician;
+    Magician magician;
     Warrior warrior;
 
     // 부모 클래스 포인터로 자식 객체 관리
